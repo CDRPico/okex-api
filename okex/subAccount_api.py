@@ -22,8 +22,16 @@ class SubAccountAPI(Client):
         params = {'pwd': pwd, 'subAcct': subAcct, 'label': label, 'apiKey': apiKey, 'perm': perm, 'ip': ip}
         return self._request_with_params(POST, RESET, params)
 
-    def create(self, pwd, subAcct, label, Passphrase, perm=None, ip=None):
-        params = {'pwd': pwd, 'subAcct': subAcct, 'label': label, 'Passphrase': Passphrase, 'perm': perm, 'ip': ip}
+    def create(self, pwd, subAcct, acctLv, label, Passphrase, perm=None, ip=None):
+        params = {
+            'pwd': pwd, 
+            'subAcct': subAcct, 
+            'acctLv': acctLv,
+            'label': label, 
+            'Passphrase': Passphrase, 
+            'perm': perm, 
+            'ip': ip
+        }
         return self._request_with_params(POST, CREATE, params)
 
     def view_list(self, enable=None, subAcct=None, after=None, before=None, limit=None):

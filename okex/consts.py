@@ -102,7 +102,7 @@ BALANCE = '/api/v5/account/subaccount/balances'
 BILLs = '/api/v5/asset/subaccount/bills'
 DELETE = '/api/v5/users/subaccount/delete-apikey'
 RESET = '/api/v5/users/subaccount/modify-apikey'
-CREATE = '/api/v5/users/subaccount/apikey'
+CREATE = '/api/v5/broker/nd/create-subaccount'
 VIEW_LIST = '/api/v5/users/subaccount/list'
 CONTROL_TRANSFER = '/api/v5/asset/subaccount/transfer'
 
