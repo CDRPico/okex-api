@@ -100,11 +100,14 @@ ORDERS_ALGO_HISTORY = '/api/v5/trade/orders-algo-history'
 # SubAccount
 BALANCE = '/api/v5/account/subaccount/balances'
 BILLs = '/api/v5/asset/subaccount/bills'
-DELETE = '/api/v5/users/subaccount/delete-apikey'
+DELETE = '/api/v5/broker/nd/delete-subaccount'
 RESET = '/api/v5/users/subaccount/modify-apikey'
 CREATE = '/api/v5/broker/nd/create-subaccount'
-VIEW_LIST = '/api/v5/users/subaccount/list'
+VIEW_LIST = '/api/v5/broker/nd/subaccount-info'
 CONTROL_TRANSFER = '/api/v5/asset/subaccount/transfer'
 
 # status
 STATUS = '/api/v5/system/status'
+
+# parameters
+MAX_LENGTH_NAME_SUBACCOUNT = 20
