@@ -99,12 +99,24 @@ ORDERS_ALGO_HISTORY = '/api/v5/trade/orders-algo-history'
 
 # SubAccount
 BALANCE = '/api/v5/account/subaccount/balances'
-BILLs = '/api/v5/asset/subaccount/bills'
-DELETE = '/api/v5/broker/nd/delete-subaccount'
+BILLS = '/api/v5/asset/subaccount/bills'
+DELETE = '/api/v5/users/subaccount/delete-apikey'
 RESET = '/api/v5/users/subaccount/modify-apikey'
-CREATE = '/api/v5/broker/nd/create-subaccount'
-VIEW_LIST = '/api/v5/broker/nd/subaccount-info'
+CREATE = '/api/v5/users/subaccount/apikey'
+VIEW_LIST = '/api/v5/users/subaccount/list'
 CONTROL_TRANSFER = '/api/v5/asset/subaccount/transfer'
+
+# Broker
+BROKER_CREATE = '/api/v5/broker/nd/create-subaccount'
+BROKER_DELETE = '/api/v5/broker/nd/delete-subaccount'
+BROKER_LIST = '/api/v5/broker/nd/subaccount-info'
+BROKER_LEVEL = '/api/v5/broker/nd/set-subaccount-level'
+BROKER_ADDRESS = '/api/v5/broker/nd/subaccount-deposit-address'
+BROKER_HISTORY = '/api/v5/asset/broker/nd/subaccount-deposit-history'
+BROKER_REBATE = '/api/v5/broker/nd/rebate-daily'
+
+
+
 
 # status
 STATUS = '/api/v5/system/status'

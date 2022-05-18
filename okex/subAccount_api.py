@@ -12,7 +12,7 @@ class SubAccountAPI(Client):
 
     def bills(self, ccy=None, type=None, subAcct=None, after=None, before=None, limit=None):
         params = {"ccy": ccy, 'type': type, 'subAcct': subAcct, 'after': after, 'before': before, 'limit': limit}
-        return self._request_with_params(GET, BILLs, params)
+        return self._request_with_params(GET, BILLS, params)
 
     def delete(self, pwd, subAcct, apiKey):
         params = {'pwd': pwd, 'subAcct': subAcct, 'apiKey': apiKey}
