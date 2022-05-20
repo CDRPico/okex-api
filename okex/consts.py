@@ -114,6 +114,8 @@ BROKER_LEVEL = '/api/v5/broker/nd/set-subaccount-level'
 BROKER_ADDRESS = '/api/v5/asset/broker/nd/subaccount-deposit-address'
 BROKER_HISTORY = '/api/v5/asset/broker/nd/subaccount-deposit-history'
 BROKER_REBATE = '/api/v5/broker/nd/rebate-daily'
+BROKER_INFO = '/api/v5/broker/nd/info'
+BROKER_CREATE_KEYS = '/api/v5/broker/nd/subaccount/apikey'
 
 
 

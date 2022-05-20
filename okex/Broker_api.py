@@ -5,6 +5,9 @@ from .consts import *
 class BrokerAPI(Client):
     def __init__(self, api_key, api_secret_key, passphrase, use_server_time=False, flag='1'):
         super().__init__(api_key, api_secret_key, passphrase, use_server_time, flag)
+    
+    def info(self):
+        return self._request_without_params(GET, BROKER_INFO)
 
     def create_subaccount(self, subAcct, acctLv, label):
         params = {
@@ -74,3 +77,13 @@ class BrokerAPI(Client):
             'limit': limit, 
         }
         return self._request_with_params(GET, BROKER_REBATE, params)
+
+    def create_keys(self, subAcct=None, label='', passphrase=None, ip=None, perm='read_only'):
+        params = {
+            'subAcct': subAcct, 
+            'label': label,
+            'passphrase': passphrase,
+            'ip': ip,
+            'perm': perm
+        }
+        return self._request_with_params(POST, BROKER_CREATE_KEYS, params)
