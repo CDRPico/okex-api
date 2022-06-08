@@ -116,6 +116,7 @@ BROKER_HISTORY = '/api/v5/asset/broker/nd/subaccount-deposit-history'
 BROKER_REBATE = '/api/v5/broker/nd/rebate-daily'
 BROKER_INFO = '/api/v5/broker/nd/info'
 BROKER_CREATE_KEYS = '/api/v5/broker/nd/subaccount/apikey'
+BROKER_GET_KEYS = '/api/v5/broker/nd/subaccount/apikey'
 
 # Convert
 CONVERT_CURRENCIES = '/api/v5/asset/convert/currencies'

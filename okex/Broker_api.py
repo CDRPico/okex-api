@@ -87,3 +87,10 @@ class BrokerAPI(Client):
             'perm': perm
         }
         return self._request_with_params(POST, BROKER_CREATE_KEYS, params)
+    
+    def get_keys(self, subAcct=None, api_key=None):
+        params = {
+            'subAcct': subAcct, 
+            'apiKey': api_key
+        }
+        return self._request_with_params(GET, BROKER_GET_KEYS, params)
