@@ -48,6 +48,7 @@ WITHDRAWAL_HISTORIY = '/api/v5/asset/withdrawal-history'
 CURRENCY_INFO = '/api/v5/asset/currencies'
 PURCHASE_REDEMPT = '/api/v5/asset/purchase_redempt'
 BILLS_INFO = '/api/v5/asset/bills'
+ASSET_VALUATION = '/api/v5/asset/asset-valuation'
 
 # Market Data
 TICKERS_INFO = '/api/v5/market/tickers'

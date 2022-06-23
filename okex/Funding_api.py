@@ -51,3 +51,8 @@ class FundingAPI(Client):
     def get_bills(self, ccy=None, type=None, after=None, before=None, limit=None):
         params = {'ccy': ccy, 'type': type, 'after': after, 'before': before, 'limit': limit}
         return self._request_with_params(GET, BILLS_INFO, params)
+    
+    # Get asset valuation
+    def get_asset_valuation(self, ccy=None):
+        params = {'ccy': ccy}
+        return self._request_with_params(GET, ASSET_VALUATION, params)
