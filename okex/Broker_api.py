@@ -94,3 +94,13 @@ class BrokerAPI(Client):
             'apiKey': api_key
         }
         return self._request_with_params(GET, BROKER_GET_KEYS, params)
+    
+    def modify_keys(self, subAcct=None, api_key=None, label=None, perm='read_only', ip=None):
+        params = {
+            'subAcct': subAcct, 
+            'apiKey': api_key,
+            'label': label,
+            'ip': ip,
+            'perm': perm
+        }
+        return self._request_with_params(POST, BROKER_GET_KEYS, params)

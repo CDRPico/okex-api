@@ -118,6 +118,7 @@ BROKER_REBATE = '/api/v5/broker/nd/rebate-daily'
 BROKER_INFO = '/api/v5/broker/nd/info'
 BROKER_CREATE_KEYS = '/api/v5/broker/nd/subaccount/apikey'
 BROKER_GET_KEYS = '/api/v5/broker/nd/subaccount/apikey'
+BROKER_MODIFY_KEYS = '/api/v5/broker/nd/subaccount/modify-apikey'
 
 # Convert
 CONVERT_CURRENCIES = '/api/v5/asset/convert/currencies'
