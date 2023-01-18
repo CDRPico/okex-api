@@ -103,4 +103,4 @@ class BrokerAPI(Client):
             'ip': ip,
             'perm': perm
         }
-        return self._request_with_params(POST, BROKER_GET_KEYS, params)
+        return self._request_with_params(POST, BROKER_MODIFY_KEYS, params)
